@@ -1,6 +1,7 @@
 
 [![Build Status](https://travis-ci.org/MySolace/refugerestrooms.svg?branch=MySolace-patch-1)](https://travis-ci.org/MySolace/refugerestrooms)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/66a5b6f1cdfc4a5780d8878f16249da0)](https://www.codacy.com/app/MySolace/refugerestrooms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MySolace/refugerestrooms&amp;utm_campaign=Badge_Grade)
+[![Coverage Status](https://coveralls.io/repos/github/MySolace/manageiq/badge.svg)](https://coveralls.io/github/MySolace/manageiq)
 
 # REFUGE restrooms
 
