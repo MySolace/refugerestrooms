@@ -1,9 +1,7 @@
-Production CI: [![Build Status](https://travis-ci.org/RefugeRestrooms/refugerestrooms.svg?branch=master)](https://travis-ci.org/RefugeRestrooms/refugerestrooms)
 
-Develop CI: [![Build Status](https://travis-ci.org/RefugeRestrooms/refugerestrooms.svg?branch=develop)](https://travis-ci.org/RefugeRestrooms/refugerestrooms)
+[![Build Status](https://travis-ci.org/MySolace/refugerestrooms.svg?branch=MySolace-patch-1)](https://travis-ci.org/MySolace/refugerestrooms)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/66a5b6f1cdfc4a5780d8878f16249da0)](https://www.codacy.com/app/MySolace/refugerestrooms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MySolace/refugerestrooms&amp;utm_campaign=Badge_Grade)
 
-
-[![Stories in Ready](https://badge.waffle.io/RefugeRestrooms/refugerestrooms.png?label=ready)](https://waffle.io/RefugeRestrooms/refugerestrooms)
 # REFUGE restrooms
 
 Providing safe restroom access to transgender, intersex, and gender noncomforming individuals.
