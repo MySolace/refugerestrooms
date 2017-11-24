@@ -32,43 +32,6 @@ function initMap(x, y, image, draggable, callback){
   currentLocation.addListener("dragend", callback);
 }
 
-
-function getPoint(string, callback){
-
-
-		//google Geocoding API
-		var url = "http://maps.googleapis.com/maps/api/geocode/json?address=" + string.replace(" ", "+");
-		$.get( url, function( data ) {
-			if(data && data.results){
-				if(data.results.length > 0){
-					callback(data.results[0].geometry.location);
-				}
-			}
-		});
-}
-
-function placeMarker(lat, lng, content, number){
-
-	//create marker
-	var marker = new NumberedCircle(new google.maps.LatLng(lat,lng), circleMarkerImage, number, content);
-
-}
-
-function generateContent(data){
-	var item = $(".listItem[data-id=" + data.id + "]");
-	var container = $("<div class='markerPopup' />");
-	container.append(item.clone());
-
-	return container;
-}
-
-function setPoint(data, number){
-	if(data.latitude && data.longitude){
-		placeMarker(data.latitude, data.longitude, generateContent(data), number);
-	}
-}
-
-
 /*
 * Create a new marker that allows text
 */
@@ -184,6 +147,42 @@ NumberedCircle.prototype.openPopup = function(content){
 	setTimeout(function(){
 		content.fadeOut();
 		}, 10000);
+}
+
+
+function getPoint(string, callback){
+
+
+		//google Geocoding API
+		var url = "http://maps.googleapis.com/maps/api/geocode/json?address=" + string.replace(" ", "+");
+		$.get( url, function( data ) {
+			if(data && data.results){
+				if(data.results.length > 0){
+					callback(data.results[0].geometry.location);
+				}
+			}
+		});
+}
+
+function placeMarker(lat, lng, content, number){
+
+	//create marker
+	var marker = new NumberedCircle(new google.maps.LatLng(lat,lng), circleMarkerImage, number, content);
+
+}
+
+function generateContent(data){
+	var item = $(".listItem[data-id=" + data.id + "]");
+	var container = $("<div class='markerPopup' />");
+	container.append(item.clone());
+
+	return container;
+}
+
+function setPoint(data, number){
+	if(data.latitude && data.longitude){
+		placeMarker(data.latitude, data.longitude, generateContent(data), number);
+	}
 }
 
 /*
