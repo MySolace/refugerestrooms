@@ -97,7 +97,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.5)
     countries (2.1.2)
       i18n_data (~> 0.8.0)
       money (~> 6.9)
@@ -108,7 +108,7 @@ GEM
       sort_alphabetical (~> 1.0)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    crass (1.0.2)
+    crass (1.0.4)
     cucumber (3.0.1)
       builder (>= 2.1.2)
       cucumber-core (~> 3.0.0)
@@ -147,7 +147,7 @@ GEM
       dotenv (= 2.2.1)
       railties (>= 3.2, < 5.2)
     equalizer (0.0.11)
-    erubi (1.7.0)
+    erubi (1.9.0)
     execjs (2.7.0)
     factory_girl (4.9.0)
       activesupport (>= 3.0.0)
@@ -212,7 +212,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kramdown (1.15.0)
-    loofah (2.1.1)
+    loofah (2.3.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.0)
@@ -225,16 +225,16 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_mime (0.1.4)
-    mini_portile2 (2.3.0)
-    minitest (5.10.3)
+    mini_portile2 (2.4.0)
+    minitest (5.12.2)
     money (6.9.0)
       i18n (>= 0.6.4, < 0.9)
     multi_json (1.12.2)
     multi_test (0.1.2)
     multi_xml (0.6.0)
     nio4r (2.1.0)
-    nokogiri (1.8.1)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (0.21.0)
     pg_search (2.1.1)
@@ -255,7 +255,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.0)
-    rack (2.0.3)
+    rack (2.0.7)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (1.0.2)
@@ -263,7 +263,7 @@ GEM
       rack
     rack-mount (0.8.3)
       rack (>= 1.0.0)
-    rack-test (0.7.0)
+    rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
       actioncable (= 5.1.4)
@@ -280,8 +280,8 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.0.3)
-      loofah (~> 2.0)
+    rails-html-sanitizer (1.2.0)
+      loofah (~> 2.2, >= 2.2.2)
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
@@ -340,9 +340,9 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    simple_form (3.5.0)
-      actionpack (> 4, < 5.2)
-      activemodel (> 4, < 5.2)
+    simple_form (5.0.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -364,7 +364,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
-    tzinfo (1.2.4)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
@@ -426,7 +426,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   sdoc
-  simple_form (~> 3.5)
+  simple_form (~> 5.0, >= 5.0.0)
   simplecov (~> 0.7.1)
   turbolinks
   tzinfo-data
@@ -437,4 +437,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
