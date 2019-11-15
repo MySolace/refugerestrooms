@@ -26,7 +26,7 @@ gem 'grape-kaminari'
 gem 'kaminari', '~> 0.17.0'
 gem 'high_voltage', '~> 3.0.0'
 gem 'bugsnag'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', '>= 1.0.5'
 gem 'rack-jsonp'
 
 # Upgraded to 1.0.0 for Rails 5.1.4
