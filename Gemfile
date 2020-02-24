@@ -4,18 +4,18 @@ ruby '2.3.1'
 gem 'rails', '5.1.4'
 gem 'pg'
 gem 'pg_search'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.6'
 gem 'bootstrap-sass'
 gem 'haml'
 gem 'rails_12factor'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
+gem 'jquery-rails', '>= 4.3.1'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.5'
 gem 'piwik_analytics', '~> 1.0.2'
 gem 'geocoder', '~> 1.2.1'
-gem 'devise', '~> 4.3'
+gem 'devise', '~> 4.3', '>= 4.3.0'
 gem 'rakismet'
 gem 'country_select'
 gem 'mail_form', '>= 1.7.0'
@@ -33,8 +33,8 @@ gem 'rack-jsonp'
 gem 'activeadmin', '~> 1.0.0'
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'rspec-rails', '>= 3.7.1'
+  gem 'factory_girl_rails', '~> 4.9', '>= 4.9.0'
   gem 'dotenv-rails', '~> 2.2.1'
   gem 'pry'
   gem 'better_errors', '~> 2.4.0'
@@ -42,7 +42,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rake'
+  gem 'rake', '>= 12.3.3'
   gem 'cucumber-rails', '~> 1.5.0', require: false
   gem 'database_cleaner'
   gem 'simplecov', '~> 0.7.1', require: false
