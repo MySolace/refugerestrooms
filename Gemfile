@@ -46,7 +46,7 @@ group :test do
   gem 'cucumber-rails', '~> 1.5.0', require: false
   gem 'database_cleaner'
   gem 'simplecov', '~> 0.7.1', require: false
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.16.0'
   gem 'webmock', '~> 1.18.0'
 end
 
